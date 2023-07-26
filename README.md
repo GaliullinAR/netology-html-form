@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/g21hfbh7n7vu7i9d?svg=true)](https://ci.appveyor.com/project/GaliullinAR/netology-html-form)
