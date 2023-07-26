@@ -5,3 +5,53 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.btn {
+  padding: 10px 30px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(216, 79, 79);
+}
+
+.tooltip-message {
+  position: absolute;
+  max-width: 200px;
+  font-size: 18px;
+  border: 1px solid #c4c4c4;
+}
+
+.tooltip-message::after {
+  content: '';
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 58%) rotate(45deg);
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-bottom: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+}
+
+.tooltip-message__title {
+  font-size: 1em;
+  background-color: #c4c4c4;
+  padding: 5px;
+}
+
+.tooltip-message__text {
+  padding: 5px;
+  font-size: 0.8em;
+}
