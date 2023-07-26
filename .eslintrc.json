@@ -1,0 +1,18 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true
+    },
+    "extends": "airbnb-base",
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "2018",
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-underscore-dangle": "off",
+        "import/no-extraneous-dependencies": "off"
+    }
+}

@@ -17,7 +17,7 @@ export default class Tooltip {
     tooltipTitle.textContent = message.title;
     tooltipText.textContent = message.text;
 
-    [tooltipTitle, tooltipText].forEach(item => {
+    [tooltipTitle, tooltipText].forEach((item) => {
       tooltip.insertAdjacentElement('beforeend', item);
     });
 

@@ -1,6 +1,5 @@
-import puppeteer from "puppeteer";
+import puppeteer from 'puppeteer';
 import { fork } from 'child_process';
-
 
 jest.setTimeout(30000);
 
@@ -23,7 +22,7 @@ describe('should tooltip show', () => {
     browser = await puppeteer.launch({
       headless: false,
       slowMo: 100,
-      devtools: true
+      devtools: true,
     });
     page = await browser.newPage();
   });
@@ -41,6 +40,4 @@ describe('should tooltip show', () => {
       await page.waitForSelector('.tooltip-message');
     });
   });
-})
-
-
+});
